@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Video Belajar</title>
+    <link rel="stylesheet" href="../styles/authentication.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="/images/logo.png" alt="Logo Video Belajar">
+        </nav>
+    </header>
+
+    <main class="auth-card">
+        <div class="welcome-message">
+            <h1>Pendaftaran Akun</h1>
+            <p>Yuk, daftarkan akunmu sekarang juga!</p>
+        </div>
+
+        <form action="../index.html" method="get">
+            <div class="form-group">
+                <label for="fullname">Nama Lengkap <span class="required">*</span></label>
+                <input class="form-input" type="text" id="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-Mail <span class="required">*</span></label>
+                <input class="form-input" type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">
+                    Jenis Kelamin <span class="required">*</span>
+                </label>
+            
+                <div class="select-wrapper">
+                    <select class="form-input" id="gender" name="gender" required>
+                        <option value="" disabled selected hidden>
+                            Pilih Jenis Kelamin
+                        </option>
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+            
+                    <img src="../images/cheffron-down-icon.png" class="chevron-icon" alt="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">No. Hp <span class="required">*</span></label>
+                <div class="phone-wrapper">
+                    <div class="country-code">
+                        <div class="flag-box">
+                            <img src="../images/indonesia-icon.png" class="flag-icon" alt="Indonesia">
+                        </div>
+                
+                        <div class="code-box">
+                            <span>+62</span>
+                            <img src="../images/cheffron-down-icon.png" class="phone-chevron" alt="">
+                        </div>
+                    </div>
+                
+                    <input class="form-input phone-input" type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]{9,13}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Kata Sandi <span class="required">*</span></label>
+                <div class="password-wrapper">
+                    <input class="form-input" type="password" id="password" required>
+                    <img src="/images/eye-off-icon.png" class="eye-icon" alt="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Konfirmasi Kata Sandi <span class="required">*</span></label>
+                <div class="password-wrapper">
+                    <input class="form-input" type="password" id="confirm-password" required>
+                    <img src="/images/eye-off-icon.png" class="eye-icon" alt="">
+                </div>
+
+                <a href="#" class="lupa-password">Lupa Password?</a>
+            </div>
+
+            <div class="form-action">
+                <button type="submit" class="btn btn-primary-default">Daftar</button>
+                <a href="./login.html" class="btn btn-primary-100">Masuk</a>
+            </div>
+
+            <div class="divider"><span>atau</span></div>
+
+            <button type="button" class="btn btn-google">
+                <img src="/images/google-icon.png" alt="">
+                <span>Daftar dengan Google</span>
+            </button>
+        </form>
+    </main>
+</body>
+</html>
